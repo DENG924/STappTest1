@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.graph_objects as gox
+import plotly.graph_objects as go
 
 st.title("Time series data analysis")
 #st.text("")
