@@ -43,3 +43,4 @@ with st.spinner("Preloading Python modules for other pages..."):
     import numpy  # noqa: ICN001 F401
     import pandas  # noqa: ICN001 F401
     import plotly
+    import matplotlib #per grafici wind rose e turbolenza
