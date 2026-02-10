@@ -55,7 +55,10 @@ if st.button("Example Dataset"):
     dir_path_str=str(dir_path)
     st.write("root directory")
     st.write(dir_path_str)
-    file_path=dir_path_str[0:dir_path_str.rfind("/")]+"/dataset/Example.txt"
+    if dir_path_str.rfind("\\")>0:
+        file_path=dir_path_str[0:dir_path_str.rfind("\\")]+"\dataset\Example.txt"
+    else:
+        file_path=dir_path_str[0:dir_path_str.rfind("/")]+"/dataset/Example.txt"
     st.write("file path")
     st.write(file_path)
 
