@@ -53,13 +53,13 @@ if st.button("Example Dataset"):
     #st.write(dir_path)
     #st.write(files)
     dir_path_str=str(dir_path)
-    st.write("root directory")
+    st.write("Root directory")
     st.write(dir_path_str)
     if dir_path_str.rfind("\\")>0:
         file_path=dir_path_str[0:dir_path_str.rfind("\\")]+"\dataset\Example.txt"
     else:
         file_path=dir_path_str[0:dir_path_str.rfind("/")]+"/dataset/Example.txt"
-    st.write("file path")
+    st.write("File path")
     st.write(file_path)
 
     df_datos_eolicos = pd.read_csv(file_path, sep='\t', decimal=",", header=0,encoding='ISO-8859-1')
