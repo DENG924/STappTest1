@@ -44,7 +44,7 @@ if uploaded_file is not None:
     st.session_state["df_datos_eolicos"] = df_datos_eolicos # initiated session state to access the data in other page
 
 
-st.write("Or press the button to use the example dataset")
+st.write("Or press the button below to use the example dataset")
 if st.button("Example Dataset"):
     #files = os.listdir("./")
     #st.write(files)
